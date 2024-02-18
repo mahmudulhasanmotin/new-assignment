@@ -57,7 +57,7 @@
             <div class="flex flex-col justify-center items-center gap-6">
                 <h1 class="text-6xl font-extrabold text-white text-center leading-[90px]">End-to-End Travel with <br> <span class="text-[#1DD100]">HANIF ENTERPRISE</span></h1>
                 <p class="text-lg font-normal text-white inter text-center">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-                <button class="btn bg-[#1DD100] border-0">Buy Tickets</button>
+                <button class="btn bg-[#1DD100] border-0" id="scrollButton">Buy Tickets</button>
             </div> 
         </div>
 
@@ -96,7 +96,7 @@
 
     <!-- main area start here -->
 
-    <main class=" mx-auto mt-[100px] rounded-[100px] bg-[#F7F8F8] " style="border-top: 1px solid #1DD100;">
+    <main id="main-area" class=" mx-auto mt-[100px] rounded-[100px] bg-[#F7F8F8] " style="border-top: 1px solid #1DD100;">
 
         <!-- Paribahan description area -->
        
@@ -119,7 +119,7 @@
                     </div>
                     <div class="flex justify-between items-center bg-[#7bfd7b63] px-5 py-2 rounded-xl gap-1 text-[#1DD100] inter text-lg font-medium">
                         <img src="images/seat-green.png" alt="">
-                        <p>40</p>
+                        <p id="seat-left">40</p>
                         <p>Seats left</p>
                     </div>
                 </div>
@@ -199,48 +199,48 @@
                     </div>
                     <div class="flex justify-around items-center gap-[35px] w-[90%]">
                         <div class="grid grid-cols-2 text-[#0000008a] gap-6 inter text-lg font-medium">
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">A1</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">A2</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">B1</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">B2</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">C1</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">C2</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">D1</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">D2</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">E1</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">E2</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">F1</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">F2</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">G1</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">G2</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">H1</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">H2</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">I1</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">I2</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">J1</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">J2</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">A1</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">A2</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">B1</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">B2</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">C1</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">C2</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">D1</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">D2</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">E1</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">E2</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">F1</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">F2</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">G1</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">G2</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">H1</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">H2</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">I1</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">I2</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">J1</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">J2</h3>
                         </div>
                         <div class="grid grid-cols-2 text-[#0000008a] gap-6 inter text-lg font-medium">
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">A3</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">A4</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">B3</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">B4</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">C3</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">C4</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">D3</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">D4</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">E3</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">E4</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">F3</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">F4</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">G3</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">G4</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">H3</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">H4</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">I3</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">I4</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">J3</h3>
-                            <h3 class="bg-[#00000013] px-6 py-3 rounded-lg">J4</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">A3</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">A4</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">B3</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">B4</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">C3</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">C4</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">D3</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">D4</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">E3</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">E4</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">F3</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">F4</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">G3</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">G4</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">H3</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">H4</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">I3</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">I4</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">J3</h3>
+                            <h3 class="bg-[#00000013] cursor-pointer px-6 py-3 rounded-lg seat-btn">J4</h3>
                         </div>
                     </div>
                 </div>
@@ -253,26 +253,28 @@
                 <hr class="mb-8">
                 <div class="flex flex-col justify-between gap-4 bg-[#F7F8F8] p-10 rounded-xl">
                     <div class="flex justify-between items-center">
-                        <h1 class="text-[#030712] inter text-base font-medium">Seat <span class="bg-[#1DD100] px-2 py-1 rounded-lg text-[#FFF]
-                            text-xs inter font-bold">0</span></h1>
+                        <h1 class="text-[#030712] inter text-base font-medium">Seat <span id="seat-count" class="bg-[#1DD100] px-2 py-1 rounded-lg text-[#FFF] text-xs inter font-bold">0</span></h1>
                         <h1 class="text-[#030712] inter text-base font-medium">Class of Coach</h1>
                         <h1 class="text-[#030712] inter text-base font-medium">Price</h1>
                     </div>
                     <hr>
-                    <div class="flex justify-between items-center">
-                        <h1 class="text-base font-normal inter text-[#00000083]">C2</h1>
-                        <h1 class="text-base font-normal inter text-[#00000083]">Economoy</h1>
-                        <h1 class="text-base font-normal inter text-[#00000083]">550</h1>
+                    <div id="seat-div">
+                        <!-- <div class="flex justify-between items-center">
+                            <h1 class="text-base font-normal inter text-[#00000083]" id="seat-name">C2</h1>
+                            <h1 class="text-base font-normal inter text-[#00000083]">Economoy</h1>
+                            <h1 class="text-base font-normal inter text-[#00000083]">550</h1>
+                        </div> -->
+
                     </div>
                     <hr>
                     <div class="flex justify-between items-center">
                         <h1 class="text-[#030712] inter text-base font-medium">Total Price</h1>
-                        <h1 class="text-[#030712] inter text-base font-medium">BDT 0</h1>
+                        <h1 class="text-[#030712] inter text-base font-medium">BDT <span id="total-price">0</span></h1>
                     </div>
                     <div class="grid grid-cols-1 w-full">
                         <label for="" class="w-full bg-[white] rounded-xl p-1">
-                            <input type="text" name="" placeholder="Have any coupon?" id="" class="w-[71%] text-sm font-normal inter p-4 text-[#000000a1]">
-                            <button class="btn text-[#FFF] text-base inter font-semibold bg-[#1DD100] rounded-lg px-6">Apply</button>
+                            <input type="text" name="" placeholder="Have any coupon?" class="w-[71%] text-sm font-normal inter p-4 text-[#000000a1]">
+                            <button id="coupon-btn" class="btn text-[#FFF] text-base inter font-semibold bg-[#1DD100] rounded-lg px-6">Apply</button>
                         </label>
                     </div>
                     <div class="flex justify-between items-center">
@@ -281,27 +283,38 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1">
-                    <h1 class="text-[#030712] inter font-semibold text-base my-2">Passenger Name*</h1>
-                    <input type="text" placeholder="Enter your name" class="text-[#03071259] inter font-normal p-4 border-[1px] rounded-lg text-base">
-                    <h1 class="text-[#030712] inter font-semibold text-base my-2">Phone Number*</h1>
-                    <input type="text" placeholder="Enter your phone number" class="text-[#03071259] inter font-normal p-4 border-[1px] rounded-lg text-base">
-                    <h1 class="text-[#030712] inter font-semibold text-base my-2">Email ID (Optional)</h1>
-                    <input type="email" placeholder="Enter your email id" class="text-[#03071259] inter font-normal p-4 border-[1px] rounded-lg text-base">
-                    <br>
-                    <button class="btn bg-[#1DD100] text-white text-xl font-extrabold mb-4"><a href="index2.html" target="_blank">Next</a></button>
-                    <div class="flex justify-around items-center">
-                        <a href="#" class="underline text-base inter font-normal text-[#0000008f]">Terms and Conditions</a>
-                        <a href="#" class="underline text-base inter font-normal text-[#0000008f]">Cancellation Policy</a>
+                <form action="index2.html" target="_blank">
+                    <div class="grid grid-cols-1">
+                        <h1 class="text-[#030712] inter font-semibold text-base my-2">Passenger Name*</h1>
+                        <input type="text" placeholder="Enter your name" class="text-[#03071259] inter font-normal p-4 border-[1px] rounded-lg text-base">
+                        <h1 class="text-[#030712] inter font-semibold text-base my-2 ">Phone Number*</h1>
+                        <input id="phone-input" type="number" placeholder="Enter your phone number" class="text-[#03071259] inter font-normal p-4 border-[1px] rounded-lg text-base">
+                        <h1 class="text-[#030712] inter font-semibold text-base my-2">Email ID (Optional)</h1>
+                        <input type="email" placeholder="Enter your email id" class="text-[#03071259] inter font-normal p-4 border-[1px] rounded-lg text-base">
+                        <br>
+                        <button id="next-btn" class="btn bg-[#1DD100] text-white text-xl font-extrabold mb-4">Next</a></button>
+                        <div class="flex justify-around items-center">
+                            <a href="#" class="underline text-base inter font-normal text-[#0000008f]">Terms and Conditions</a>
+                            <a href="#" class="underline text-base inter font-normal text-[#0000008f]">Cancellation Policy</a>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
 
 
     </main>
     <footer>
-    </footer>
+<!-- 
 
+        <button onclick="scrollWin(0, 50)">Scroll down</button>
+        <button onclick="scrollWin(0, -50)">Scroll up</button>
+
+        <script>
+            function scrollWin(x, y) {window.scrollBy(x, y);}
+        </script> -->
+
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
