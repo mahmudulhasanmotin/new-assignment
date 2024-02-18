@@ -10,8 +10,9 @@ buyBtn.addEventListener('click', function () {
 });
 
 // button disbaled
-document.getElementById("coupon-btn").disabled = true;
 document.getElementById("next-btn").disabled = true;
+document.getElementById("coupon-btn").disabled = true;
+
 
 // seat count here
 const seatAll = document.getElementsByClassName('seat-btn');
@@ -39,6 +40,10 @@ for (const seat of seatAll) {
             totalPrice = seatCount * 550;
             const myPrice = document.getElementById('total-price')
             myPrice.innerHTML = totalPrice;
+
+            const grandPrice = document.getElementById('grand-total');
+            grandPrice.innerHTML = totalPrice;
+
             seat.classList.add('bg-[#1DD100]');
             const CountAll = document.getElementById('seat-count');
             CountAll.innerHTML = seatCount;
@@ -68,8 +73,11 @@ for (const seat of seatAll) {
         if (seatCount > 0 && getPhone === 'string') {
             document.getElementById("next-btn").disabled = false;
         }
-
+        
+        if( seatCount > 3 ){
+            document.getElementById("coupon-btn").disabled = false;
+        }
 
     });
+    
 };
-

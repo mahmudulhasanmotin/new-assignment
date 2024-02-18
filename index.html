@@ -72,7 +72,7 @@
                         <p class="text-lg font-medium text-[#00000088]">use by January 2024</p>
                     </div>
                     <div class="bg-[#FFBF0F] py-[70px] px-[55px] rounded-2xl" >
-                        <h1 class="text-3xl font-bold text-[#000000af]">NEW15</h1>
+                        <h1 id="new-offers" class="text-3xl font-bold text-[#000000af]">NEW15</h1>
                         <p class="text-lg font-medium text-[#00000071]">Coupon Code</p>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                         <p class="text-lg font-medium text-[#00000088]">use by January 2024</p>
                     </div>
                     <div class="bg-[#F78C9C] py-[70px] px-[55px] rounded-2xl">
-                        <h1 class="text-3xl font-bold text-[#000000af]">Couple 20</h1>
+                        <h1 id="couple-offers" class="text-3xl font-bold text-[#000000af]">Couple 20</h1>
                         <p class="text-lg font-medium text-[#00000071]">Coupon Code</p>
                     </div>
                 </div>
@@ -267,19 +267,25 @@
 
                     </div>
                     <hr>
-                    <div class="flex justify-between items-center">
-                        <h1 class="text-[#030712] inter text-base font-medium">Total Price</h1>
-                        <h1 class="text-[#030712] inter text-base font-medium">BDT <span id="total-price">0</span></h1>
+                    <div id="price-div">
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-[#030712] inter text-base font-medium">Total Price</h1>
+                            <h1 class="text-[#030712] inter text-base font-medium">BDT <span id="total-price">0</span></h1>
+                        </div>
+                        <div id="discount-amount" class="flex justify-between items-center hidden">
+                            <h1 class="text-[#030712] inter text-base font-light">Discount</h1>
+                            <h1 class="text-[#030712] inter text-base font-light">BDT <span id="discount-price">0</span></h1>
+                        </div>
                     </div>
                     <div class="grid grid-cols-1 w-full">
                         <label for="" class="w-full bg-[white] rounded-xl p-1">
-                            <input type="text" name="" placeholder="Have any coupon?" class="w-[71%] text-sm font-normal inter p-4 text-[#000000a1]">
+                            <input id="coupon-input" type="text" name="" placeholder="Have any coupon?" class="w-[71%] text-sm font-normal inter p-4 text-[#000000a1]">
                             <button id="coupon-btn" class="btn text-[#FFF] text-base inter font-semibold bg-[#1DD100] rounded-lg px-6">Apply</button>
                         </label>
                     </div>
                     <div class="flex justify-between items-center">
                         <h1 class="text-[#030712] inter text-base font-medium">Grand Total</h1>
-                        <h1 class="text-[#030712] inter text-base font-medium">BDT 0</h1>
+                        <h1 class="text-[#030712] inter text-base font-medium">BDT <span id="grand-total" >0</span></h1>
                     </div>
                 </div>
 
@@ -305,16 +311,9 @@
 
     </main>
     <footer>
-<!-- 
-
-        <button onclick="scrollWin(0, 50)">Scroll down</button>
-        <button onclick="scrollWin(0, -50)">Scroll up</button>
-
-        <script>
-            function scrollWin(x, y) {window.scrollBy(x, y);}
-        </script> -->
 
     </footer>
     <script src="script.js"></script>
+    <script src="offers.js"></script>
 </body>
 </html>
