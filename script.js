@@ -17,7 +17,7 @@ document.getElementById("coupon-btn").disabled = true;
 // seat count here
 const seatAll = document.getElementsByClassName('seat-btn');
 
-
+// seat select
 const phoneNumber = document.getElementById('phone-input');
 getPhone = typeof phoneNumber.value;
 

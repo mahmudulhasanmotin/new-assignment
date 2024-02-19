@@ -1,5 +1,7 @@
 
 
+// coupon apply function heer
+
 const applyBtn = document.getElementById('coupon-btn');
 applyBtn.addEventListener('click',function(){
     let couponInput = document.getElementById('coupon-input').value;
@@ -32,41 +34,3 @@ applyBtn.addEventListener('click',function(){
     }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const input = document.getElementById("coupon-input");
-// const inputValue = input.value.toString();
-
-// const coupleOffers = document.getElementById('couple-offers');
-// const coupleOffersValue = coupleOffers.innerText.toString();
-
-// const newOffers = document.getElementById('new-offers');
-// const newOffersValue = coupleOffers.innerText.toString();
-
-// applyBtn.addEventListener('click', function(){
-//     if( newOffersValue === inputValue ){
-//         alert('good boys');
-//     }
-// })
